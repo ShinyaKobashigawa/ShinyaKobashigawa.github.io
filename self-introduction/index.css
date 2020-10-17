@@ -1,0 +1,46 @@
+body{
+    color: #30273b;
+	background-image: url(white.png);
+}
+	
+h1{
+	font-weight: normal;
+	text-align: center;
+	font-size: 65px;
+	border-bottom: 3px solid ;
+	border-color: #f5a500;	
+	font-family:'Sansita Swashed', cursive;
+	
+}
+
+.selected{
+	color: #00aaff
+
+
+} 
+
+.header-list p{
+    font-size: 50px;
+	padding: 25px 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contents{
+    font-size: 65px;
+    border-bottom: 3px solid #f5a500;
+    font-family:'Sansita Swashed', cursive;
+    font-weight: normal;
+    
+
+   
+
+
+}
+.contents-item{
+	float: left;
+    margin:30px 40px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}

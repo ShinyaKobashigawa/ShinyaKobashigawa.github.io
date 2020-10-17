@@ -1,0 +1,20 @@
+.header{
+	background-color: yellow;
+	height: 200px;
+	display: flex;
+	width: 1000px;
+}
+.middle{
+	background-color: blue;
+	height: 300px;
+	display: flex;
+	width: 1000px;
+}
+.leftb{
+	background-color: yellow;
+	margin: 0px 400px;
+	width: 200px;
+	
+}
+
+

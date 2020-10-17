@@ -1,0 +1,36 @@
+#body1{
+	border:1px solid black;
+	margin:0px 100px;
+	width: 1000px;
+	height: 500px;
+}
+.header{
+	background-color: blue;
+	height: 200px;
+	width: 1000px;
+	display: flex;
+}
+.header-middle{
+	background-color: yellow;
+	width: 100px;
+	margin: 0px 300px;
+
+}
+.middle{
+	background-color: yellow;
+	height: 100px;
+	width: 1000px;
+    display: flex;
+}
+
+.bottom{
+	background-color: blue;
+	height: 200px;
+	width: 1000px;
+	display: flex;
+}
+.bottom-middle{
+	background-color: yellow;
+	width: 100px;
+	margin: 0px 300px;
+}

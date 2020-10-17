@@ -1,0 +1,72 @@
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+.header{
+	width: 800px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+}
+
+.header-right{
+	position: absolute;
+	top: 20px;
+	right:20px;
+	padding:10px;
+	background-color: #fff;
+
+}
+
+
+.header-right li{
+	background-color: #00ff00;
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-left: 10px;
+}
+
+.header-right li:first-child{
+	margin-left: 0;
+}
+
+.sidebar{
+	float: left;
+	position: relative;
+	background-color: yellow;
+	width: 200px;
+	height: 400px;
+}
+.sidebar-box {
+	position: absolute;
+	top: 50px;
+	left:50px;
+}
+.sidebar-box li{
+     background-color: pink;
+     height: 50px;
+     width: 100px;
+     margin-bottom: 50px;
+}
+
+.main {
+	float: right;
+	background-color: blue;
+	height: 400px;
+	width: 600px;
+}
+
+.footer{
+	background-color: green;
+	height: 100px;
+	width: 800px;
+
+}
+/*contentの文字が反映される　after要素の直後　before要素の直前*/
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}

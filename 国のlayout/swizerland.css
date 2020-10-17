@@ -1,0 +1,38 @@
+.header{
+	background-color:red;
+	width: 1200px;
+	height: 200px;
+	display: flex;
+}
+.header-middle{
+	background-color:white;
+	margin: 50px 500px 0px 500px;
+	width: 200px;
+	height: 150px;
+}
+.main{
+	background-color: red;
+	width: 1200px;
+	height: 200px;
+	display: flex;
+}
+.main-middle{
+	background-color: white;
+	margin: 0px 400px;
+	width: 600px;
+	height: 200px;
+}
+.footer{
+	background-color: red;
+	width: 1200px;
+	height: 200px;
+	display: flex;
+
+}
+.footer-middle{
+	background-color:white;
+	margin:0px 500px 50px 500px;
+	width: 200px;
+	height: 150px;
+
+}

@@ -1,0 +1,23 @@
+.container{
+	background-color: red;
+	width: 800px;
+	height: 700px;
+	margin: 0 auto;
+	padding-top: 100px;
+
+}
+
+
+.white{
+	background-color: #fff;
+	width: 600px;
+	height: 150px;
+	margin :0 auto;
+	
+}
+
+.small.white{
+	width: 150px;
+	height: 200px;
+	
+}
