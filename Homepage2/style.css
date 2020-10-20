@@ -1,0 +1,61 @@
+body{
+	min-height: 100vh;
+	    display: flex;
+    flex-direction: column;
+        width: 900px;
+    margin: 0 auto;
+}
+
+
+/*ここからheader*/
+header{
+	height: 200px;
+}
+/*ここまでheader*/
+
+
+div{
+	display: flex;
+	flex: 1;
+}
+/*ここからmain*/
+main{
+	flex: 1;
+}
+/*ここまでmain*/
+
+/*ここからnab*/
+nav{
+	width: 150px;
+}
+/*ここまでnav*/
+
+/*ここからaside*/
+aside{
+	width: 100px;
+}
+/*ここまでaside*/
+
+/*ここからfooter*/
+footer{
+	height: 150px;
+}
+/*ここまでfooter*/
+
+@media screen and (max-width: 900px){
+	body,aside,nav{
+		width: 100%;
+	}
+	div{
+		flex-direction: column;
+	}
+	nav{
+		height: 150px;
+	}
+	main{
+		order:-1;
+	}
+	aside{
+		height:150px; 
+	}
+}
