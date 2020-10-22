@@ -150,3 +150,27 @@ if (num1>num2) {
 }
 printMaxNum(20,10);
 
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：getSquared
+// 引数1：1つの数値
+// 処理内容：引数で受け取った数値の2乗を計算し返す
+
+// function getSquared(num){
+// 	if () {}
+
+
+
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：createSelfIntroductionText
+// 引数1：1つの文字列
+// 処理内容：「私の名前は○○です」という文字の〇〇を引数で受け取った文字列にし返す
+
+function creatSelfintroduction(moji){
+	console.log(`私の名前は${moji}です`);
+}
+
+creatSelfintroduction('shinya');
