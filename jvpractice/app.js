@@ -193,3 +193,20 @@ function isEvenNumber(num){
 }
 
 isEvenNumber(7);
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：isSeedKun
+// 引数1：任意の文字列
+// 処理内容：引数で渡された文字列が「SeedKun」の場合は true、そうでない場合は false を返す。
+
+function isSeedKun(moji){
+	if (moji=='SeedKun') {
+		console.log(true);
+	}
+	else{
+		console.log(false);
+	}
+}
+
+isSeedKun('SeedKun');
