@@ -174,3 +174,22 @@ function creatSelfintroduction(moji){
 }
 
 creatSelfintroduction('shinya');
+
+
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：isEvenNumber
+// 引数1：1つの数値
+// 処理内容：引数で渡された値が偶数の場合は true、そうでない場合は false を返す。
+
+function isEvenNumber(num){
+	if (num%2===0) {
+		console.log(true);
+	}
+	else{
+		console.log(false);
+	}
+}
+
+isEvenNumber(7);
