@@ -52,11 +52,11 @@ function myalert2(displayMessage){
 //関数名:printhoge 
 //処理内容:Hogeとコンソールに表示する。
 function printhoge(msg){
-	console.log('hoge');
+	console.log(msg);
 }
 
 // 作った関数を実行
-printhoge();
+printhoge('hoge');
 
 // 以下の関数を作成して、作成した関数を実行してください。
 
@@ -158,8 +158,8 @@ printMaxNum(20,10);
 // 処理内容：引数で受け取った数値の2乗を計算し返す
 
 // function getSquared(num){
-// 	if () {}
-
+// 	console.log(num*
+// }
 
 
 

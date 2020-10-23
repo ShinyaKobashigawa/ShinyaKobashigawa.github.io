@@ -257,3 +257,15 @@ for (let i = 1 ; i<=50 ; i++){
 	}
 	console.log(i);
 }
+
+let restaurants =['Mac','Mos','A&W'];
+
+console.log(restaurants);
+
+console.log(restaurants[2]);
+
+restaurants.push('SevenEleven');
+
+console.log (restaurants[3]);
+
+

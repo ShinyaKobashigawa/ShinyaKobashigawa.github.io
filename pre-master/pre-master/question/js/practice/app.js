@@ -54,6 +54,9 @@ console.log('----------------4. 3倍した数を表示する----------------');
  * 1から10までの数字をそれぞれ3倍した数字を表示するプログラムを書いてください。
  * 3 6 9 ... 30 までが表示されればOKです
  */
+for (let i=1;i<=10;i++){
+	console.log(i*3)
+}
 
 console.log('----------------5. FizzBuzz----------------');
 /**
@@ -64,16 +67,40 @@ console.log('----------------5. FizzBuzz----------------');
  * 3と5の両方の倍数の場合はFizzBuzz
  * と表示するようにしてください。
  */
+ for(let i = 1;i<=100;i++){
+ 	if (i%3==0 && i%5==0) {
+ 		console.log('FizzBuzz');
+ 	}
+ 	else if(i%3==0){
+ 		console.log('Fizz');
+ 	}
+ 	else if(i%5==0) {
+ 		console.log('Buzz');
+ 	}
+ 	
+ 	else{
+ 		console.log(i);
+ 	}
+ }
 
 console.log('----------------6.九九----------------');
 /**
  * 九九を表示するプログラムを書いてください。
  */
+ for(let i=1 ;i<=9;i++){
+ 	for(let t=1;t<=9;t++)
+ 	console.log (i*t);
+ }
 
 console.log('----------------7. 繰り返しの中断、スキップ----------------');
 /**
  * 九九の中で答えが30未満の数値だけ表示してください。
  */
+  for(let i=1 ;i<=9;i++){
+ 	for(let t=1;t<=9;t++)
+ 	console.log (i*t);
+
+ }
 
 
 // チャレンジ問題
@@ -86,6 +113,16 @@ console.log('----------------1. 女湯問題----------------');
  * genderは male, female, otherのいずれかにしてください。
  * 女湯に入れる場合は「入れます」、入れない場合は「入れない」と表示してください。
  */
+ let customer = {age:25,gender:'others'};
+ if (customer.gender=='male') {
+ 	console.log('入れる');
+ }
+ else if (customer.gender=='female') {
+ 	console.log('入れない');
+ }
+ else {
+ 	console.log('?');
+ }
 
 console.log('----------------2. 素数を表示するプログラム----------------');
 /**
