@@ -157,9 +157,12 @@ printMaxNum(20,10);
 // 引数1：1つの数値
 // 処理内容：引数で受け取った数値の2乗を計算し返す
 
-// function getSquared(num){
-// 	console.log(num*
-// }
+function getSquared(num){
+	console.log(num*num);
+}
+getSquared(2);
+// 戻り値（返り値）　return 値;のかたちで、実行したがわに戻される値
+// 引数とぎゃくほうこうに値を送る
 
 
 
