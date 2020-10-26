@@ -79,13 +79,12 @@ text3.addEventListener('mouseleave',function(){
 
 // Q 9
 
-var input = document.querySelector('#q9-input');
-var result = document.querySelector('#q-9result')
-  function submit(){
-  console.log(input.value);
-  result.innerText = input.value;
+var input_q9 = document.querySelector('#q9-input');
+var result_q9 = document.querySelector('#q-9result')
+function submit(){
+  console.log(input_q9.value);
+  result_q9.innerText = input_q9.value;
 }
-
 
 // Q 10
 var input = document.querySelector('#q10-input');
