@@ -83,7 +83,7 @@ var input_q9 = document.querySelector('#q9-input');
 var result_q9 = document.querySelector('#q-9result')
 function submit(){
   console.log(input_q9.value);
-  result_q9.innerText = input_q9.value;
+  result_q9.textContent = input_q9.value;
 }
 
 // Q 10
@@ -91,10 +91,10 @@ var input = document.querySelector('#q10-input');
 var result = document.querySelector('#q10-result');
   function submit2(){
      if (input.value<20) {
-      result.innerText = ('20歳未満の方の利用は禁止です。');
+      result.textContent = ('20歳未満の方の利用は禁止です。');
      }   
      else{
-      result.innerText=input.value;
+      result.textContent=input.value;
      }
 
   }
@@ -107,18 +107,18 @@ var input_age = document.querySelector('#q11-input-age');
 var result_age = document.querySelector('#q11-result-age');
   function submit3(){
   if (input_name.value=='') {
-       result_name.innerText = ('名前が空欄です');
+       result_name.textContent = ('名前が空欄です');
        result_name.style.color='red';
   }
   else {
-       result_name.innerText=input_name.value;
+       result_name.textContent=input_name.value;
        result_name.style.color='black';
   }   
   if (input_age.value<20) {
-       result_age.innerText = ('20歳未満の方の利用は禁止です。');
+       result_age.textContent = ('20歳未満の方の利用は禁止です。');
   }   
   else{
-       result_age.innerText=input_age.value;
+       result_age.textContent=input_age.value;
   }
 }
 
