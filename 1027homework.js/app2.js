@@ -143,7 +143,7 @@ var button_11 = document.querySelector('.q11-btn');
   }
   else {
        result_name.textContent=input_name.value;
-       result_name.style.color='black';
+       result_name.style.color='';
   }   
   if (input_age.value<20) {
        result_age.textContent = ('20歳未満の方の利用は禁止です。');
@@ -155,28 +155,28 @@ var button_11 = document.querySelector('.q11-btn');
 
 
 // Q 12
-var parent_text = document.querySelector('.q12-result');
 var btn_12 = document.querySelector('.q12-btn');
  btn_12.addEventListener('click',function(){
+  var parent_text = document.querySelector('.q12-result');
   var child_p = document.createElement('p');
-  child_p.textContent = 'Google';
+  child_p.textContent = btn_12.textContent;
    parent_text.appendChild(child_p);
  })
 
 // Q 13
 var addition = document.querySelector('.q13-btn');
-var parent_box = document.querySelector('#q13-box');
-var melon = document.querySelector('.melon');
 addition.addEventListener('click',function(){
+  var parent_box = document.querySelector('#q13-box');
+  var melon = document.querySelector('.melon');
   var child_li = document.createElement('li');
   child_li.textContent = 'リンゴ';
   parent_box.insertBefore(child_li,melon)
 })
 
 // Q 14
-var del = document.querySelector('#chicken');
 var but = document.querySelector('.q14-btn');
 but.addEventListener('click',function(){
+  var del = document.querySelector('#chicken');
   del.remove();
 })
 
@@ -185,25 +185,45 @@ but.addEventListener('click',function(){
 // 要素.href = 'https://google.com';
 // でリンク先を追加できます。
 
-var web_list = document.querySelector('q15-link-list');
-var parent_text2 = document.querySelector('q15-btn');
-
-var child_a = document.createElement('a');
-child_a.textContent ='google';
-child_a.href ='https://google.com';
-
-var child_a2 = document.createElement('a');
-child_a2.textContent = 'youtuve';
-child_a2.href ='https://youtube.com';
-
-var child_a3 = document.createElement('a');
-child_a3.textContent = 'amazon';
-child_a3.href ='https://amazon.com';
-
-parent_text2.addEventListener('click',function(){
-  for (var i = 1;i<3;i++){
-
-    }
-  
-  parent_text2.appendChild(child_a);
+let btn_15 = document.querySelectorAll('.q15-btn');
+for(btn_15_each of btn_15)
+btn_15_each.addEventListener('click',function(){
+var q15_link_list = document.querySelector('.q15-link-list');
+var q15_a = document.createElement('a');
+if (this.textContent==='Google') {
+  q15_a.href = 'https://google.com';
+  q15_a.textContent = this.textContent;
+}
+if (this.textContent==='YouTube') {
+  q15_a.href = 'https://youtube.com';
+  q15_a.textContent = this.textContent;
+}
+if (this.textContent==='amazon') {
+  q15_a.href = 'https://amazon.com';
+  q15_a.textContent = this.textContent;
+}
+q15_link_list.appendChild(q15_a);
 })
+
+
+
+// let btn_15 = document.querySelectorAll('.q15-btn');
+
+// for (btn_15_each of btn_15 )
+// btn_15_each.addEventListener('click',function(){
+// var web_list = document.querySelector('.q15-link-list');
+// var add_a = document.createElement('a');
+//     if (this.textContent == 'Google') {
+//     add_a.href ='https://google.com';
+//     add_a.textContent =this.textContent;
+//     }
+//      if (this.textContent == 'YouTube') {
+//     add_a.href ='https://youtube.com';
+//     add_a.textContent = this.textContent;
+//     }
+//      if (this.textContent == 'Amazon') {
+//     add_a.href ='https://amazon.com';
+//     add_a.textContent = this.textContent;
+//     }
+//     web_list.appendChild(add_a);
+// })
