@@ -2,7 +2,7 @@ body {
 	width: 960px;
 	margin: 0 auto;
 	font-family: 'IBM Plex Serif', serif;
-	background-image: url(shadow-leaves-white-backdrop.jpg);
+	background-image: url(../img/shadow-leaves-white-backdrop.jpg);
 	background-size: cover;
 }
 .title{

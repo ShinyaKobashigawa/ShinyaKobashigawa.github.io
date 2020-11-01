@@ -1,7 +1,6 @@
 let data;
 
 
-
 // for( let i of data){
 //   addtag(i)
 // }
