@@ -107,7 +107,7 @@ function printKakezan(num1,num2){
 
 printKakezan(200,3);
 
-
+printKakezan(4,6);
 
 
 function printIsEven(num){

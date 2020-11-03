@@ -1,71 +1,26 @@
-let data;
-
-
-// for( let i of data){
-//   addtag(i)
-// }
-
 
 let button = document.querySelector('.btn');
-button.addEventListener('click', function(){
-    										let input = document.querySelector('.input');
-										    if (input.value != '') {
-										    						addtag(input.value)
-										    						// data.push(input);
-										    						// localStorage.setItem('stoplist',JSON.stringfy(data));
-										    						// function addtag(stopadd)
-										    						//  {
-																    //     let stop_list = document.querySelector('.stop_list');
-																    //     let li_stop = document.createElement('li');
-																    //     li_stop.classList.add('list');
-																    //     li_stop.textContent = stopadd;
-																    //     stop_list.appendChild(li_stop);
-																    //     let div_delete = document.createElement('div');
-																    //     div_delete.classList.add('delete')
-																    //     div_delete.textContent = 'Delete';
-																    //     console.log (div_delete);
-																    //     li_stop.appendChild(div_delete);
-																    //     div_delete.addEventListener('click', function(){
-																				// 			                            let hantei = confirm('本当に削除しますか？')
-																				// 			                            if (hantei===true) 
-																				// 			                               {this.parentElement.remove()}	
-																				// 										}
-																				// 					)
-													       //          } 
-													              }
-	                                       
-
-        // let div_delete = document.createElement('div');//          
-        // div_delete.classList.add('delete')
-        // div_delete = 'Delete';
-        // div_delete.addEventListener('click', function() {
-        //     let hantei = confirm('本当に削除しますか？');
-        //     this.parentElement.remove();
-                                           }
-                         )                  
-            // li_stop.appendChild(div_delete);
-            // stop_list.appendChild(li);
-            // document.querySelector('.input').value = '';
-function addtag(stopadd)
-										    						 {
-																        let stop_list = document.querySelector('.stop_list');
-																        let li_stop = document.createElement('li');
-																        li_stop.classList.add('list');
-																        li_stop.textContent = stopadd;
-																        stop_list.appendChild(li_stop);
-																        let div_delete = document.createElement('div');
-																        div_delete.classList.add('delete')
-																        div_delete.textContent = 'Delete';
-																        console.log (div_delete);
-																        li_stop.appendChild(div_delete);
-																        div_delete.addEventListener('click', function(){
-																							                            let hantei = confirm('本当に削除しますか？')
-																							                            if (hantei===true) 
-																							                               {this.parentElement.remove()}	
-																														}
-																									)
-													                } 
-
-
-
-													       
+button.addEventListener('click',function(){
+    let stop_input = document.querySelector('.input');
+    if (stop_input.value != '') {
+	let stop_list = document.querySelector('.stop-list');
+	let list = document.createElement('li');
+	list.classList.add('list');
+	list.textContent = stop_input.value;
+    stop_list.appendChild(list);
+    // let stop_div =document.createElement('div');
+    // stop_div.classList.add('delete');
+    // stop_div.textContent = 'Delete';
+    // list.appendChild(stop_div);
+    let stop_i = document.createElement('i')
+    stop_i.classList.add('fas');
+    stop_i.classList.add('fa-check');
+    list.appendChild(stop_i);
+    stop_i.addEventListener('click',function(){
+    let judge = confirm('Are you sure you want to remove this list?');
+    if (judge === true){
+    	list.remove();
+    }
+    })
+    }
+})

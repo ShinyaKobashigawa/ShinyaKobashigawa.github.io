@@ -55,9 +55,10 @@ form{
 	border-bottom: 2px solid;
 }
 
-.delete{
+.fas{
 	cursor: pointer;
+	font-size: 1.3em;
 }
-.delete:hover {
+.fas:hover {
 	color:red;
 }

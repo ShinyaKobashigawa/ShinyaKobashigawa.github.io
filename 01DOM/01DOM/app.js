@@ -26,10 +26,9 @@ console.log(ika);
 
 // 親要素の取得(子要素をもとにどう取得するか)
 let first_ika = document.querySelector('.ika');
-console.log(first_ika);
+console.log(first_ika.parentElement);
 
-let ul = first_ika.parentElement;
-console.log(ul);
+
 // // 上と同じ
 // console.log(document.querySelector('ika').parentElement);
 // エラーが表示される。
