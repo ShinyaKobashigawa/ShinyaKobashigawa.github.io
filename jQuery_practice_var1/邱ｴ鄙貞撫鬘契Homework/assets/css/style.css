@@ -95,6 +95,7 @@ h1  {
 .hamburger.on span:after {
   transform: rotate(-45deg) translate(7px, -8px);
 }
+
 /* Q7ここまで */
 
 .orange-ball {

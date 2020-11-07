@@ -38,7 +38,7 @@ $('#q5-btn').on('click',function(){
 // Q6
 
 $('#q6-btn').on('click',function(){
-	$('.q6-text').append('<p class"red">追加文字</p>');
+	$('.q6-text').append('<p class = "red">追加文字</p>');
 })
 
 
@@ -74,10 +74,10 @@ $('.q10-hide-btn').on('click',function(){
 // Q11
 
 $(window).on('scroll',function(){
-	let q11_position = $('#q11').offset().top;
+	let q12_position = $('#q-12').offset().top;
 	let height = $(window).height();
 	let now_position = $(window).scrollTop();
-	if (q11_position <= height + now_position){
+	if (q12_position <= height + now_position){
 		$('.q11-target').removeClass('hide');
 	}
 	else{

@@ -58,9 +58,34 @@ $('.js-modal-close').on('click',function(){
     $('#modal-bg').fadeOut('slow');   
 	})
 
+// Q9
+// リスト内のaタグが押されたら(三つある項目のどれか押されたかを識別したい)
+$('.tab-nav a ').on('click',function(){
 
+// もしclass='active'が付いていたら、何もしない'
+// hasClass('付いているか確認したいクラス名')
+if ($(this).hasClass('active')){
+  // ここで処理を終了する
+  return false;
+}
+// class='active'　と指定されていないときに行いたい処理を書く
+// まず、class='active'とついてるリストタグを無くす
+$('.tab-nav a').removeClass('active');
+// 押されたaタグにclass='active'と付ける
+$(this).addClass('active');
 
+// #から始まるurlの一部を取得
+// javascriptの書き方で使える
+// 内容が書いてあるdivから全てclass='active'を削除する
+$('.tab-content > div').removeClass('active');
 
+// this.hash取得した文字列と同じid名のdivタグにclass='active'をつける
+// 要素.filter(セレクタ名) 要素内にある指定されたセレクタ名の要素を所得する
+$('.tab-content > div').filter(this.hash).addClass('active');
+
+// ページ内リンクの効果を打ち消す
+return false;
+});
 
 
 
