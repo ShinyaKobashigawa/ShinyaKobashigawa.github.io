@@ -3,6 +3,8 @@
 <head>
 	<title>kurashiru</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="kurashiru.js"></script>
 	<meta charset="utf-8">
    <meta name="viewport" content="width=divice-width,initial-scale=1.0">
 	<meta name="description" content="簡単に作れるレシピを紹介">
@@ -14,6 +16,7 @@
 	<header class="page-header ">
     <div class="header-left">
 		<p><a href=""><img class="logo" src="images/kurashiru_logo-d94be8fdb7366edee8c0f9fe35e6474e13900aae177a0bb438f003ccf496b15a.png"></a></p>
+      <p id='hamburger-btn' class="js-hamburger hamburger"><span></span></p>
 		<div class="search">
 		<input type="search" name="search" placeholder="キーワードを入力">
     	<input type="submit" name="submit" value="検索">
