@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script defer src="nexseed.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
@@ -21,10 +23,13 @@
       <span class="name"><strong>Seed</strong>Kun</span>
     </div>
     <!-- header right -->
-    <ul class="header-right">
+    <div>   
+      <ul class="header-right">
       <li>新規登録</li>
       <li>ログイン</li>
     </ul>
+    </div>
+     <p id='hamburger-btn' class="js-hamburger hamburger"><span></span></p>
   </header> 
 
   <!-- header ここまで -->
@@ -32,6 +37,13 @@
   <!-- welcome -->
 
   <main class="welcome" id="margin-for-fixed">
+    
+    <div class="target hide">
+  <ul>      
+   <li>新規登録</li>
+   <li>ログイン</li>
+ </ul>
+ </div>
     <h1 class="title">Welcome to NexSeed Okinawa</h1>
     <ul class="guideline">
       <li>Be Athlete</li>
@@ -41,6 +53,7 @@
     <div class="btn-group">
       <button class="btn register">新規登録</button>
       <button class="btn login">ログイン</button>
+     
     </div>
   </main>
 
