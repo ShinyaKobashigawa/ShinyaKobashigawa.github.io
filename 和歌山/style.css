@@ -1,0 +1,51 @@
+.icon{
+    position: fixed;
+    left: 150px;
+    top: 100px;
+}
+.icon p{
+     margin-bottom: 50px;
+     font-size: 45px;
+     justify-content: center;
+}
+.video{
+	margin: 30px auto;
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+    font-size: 45px;
+}
+.title{
+	font-family: "Cardo", serif;
+	font-size: 70px;
+    line-height: 1.7;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+.para{
+	font-family: "Cardo", serif;
+    font-style: italic;
+    font-size: 35px;
+    padding-top: 30px;
+    text-align: center;
+}
+.page-top{
+	position: fixed;
+	bottom: 20px;
+    right: 20px;
+    font-size: 45px;
+}
+a{
+    color: cornflowerblue;
+}
+.footer{
+    text-align: center;
+    font-size: 17px;
+    font-family: "Cardo", serif;
+    font-style: italic;
+}
+
+body{
+    height: 2000px;
+}
