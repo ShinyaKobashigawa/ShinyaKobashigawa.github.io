@@ -1,4 +1,4 @@
-let dragonball = ['goku','kuririn','pikkoro'];
+let dragonball = JSON.parse(localStorage.getItem('doragon'));
 // genkidama(dragonball[0]);
 // for(let i = 0; i <dragonball.length; i++){
 //     genkidama(dragonball[i]);
@@ -12,6 +12,9 @@ let button = document.querySelector('.btn');
 button.addEventListener('click',function(){
      if (stop_input.value != '') {
     genkidama(stop_input.value)
+    dragonball.push(stop_input.value)
+    localStorage.setItem('doragon',JSON.stringify(dragonball));
+    // console.log(JSON.stringify(dragonball))
 }
 })
 
@@ -29,6 +32,8 @@ function genkidama(kamesennin){
                     let judge = confirm('Are you sure you want to remove this list?');
                     if (judge === true){
                         list.remove();
+                        dragonball.splice(dragonball.indexOf(this.parentElement.textContent),1);
+                        localStorage.setItem('doragon',JSON.stringify(dragonball));
                     }
                     })
                     }
