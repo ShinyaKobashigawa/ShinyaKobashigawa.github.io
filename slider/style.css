@@ -1,8 +1,19 @@
-.swiper-container{
-	text-align: center;
+body{
+  background-color: #ccc;
 }
 
-img{
-	width: 400px;
-	height: 400px;
+.swiper-container{
+  width: 600px;
+}
+
+.swiper-slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img{
+  width: 300px;
+  height: 300px;
 }

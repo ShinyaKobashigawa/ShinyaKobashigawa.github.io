@@ -253,6 +253,8 @@ body{
 
 .slide-wrapper {
     position: absolute;
+    width: 2500px;
+    display: flex;
 }
 
 .slide {

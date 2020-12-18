@@ -1,40 +1,85 @@
-let dragonball = JSON.parse(localStorage.getItem('doragon'));
-// genkidama(dragonball[0]);
-// for(let i = 0; i <dragonball.length; i++){
-//     genkidama(dragonball[i]);
-// }
-for(let i  of dragonball){
-    genkidama(i);
-}
-
-let stop_input = document.querySelector('.input');
 let button = document.querySelector('.btn');
-button.addEventListener('click',function(){
-     if (stop_input.value != '') {
-    genkidama(stop_input.value)
-    dragonball.push(stop_input.value)
-    localStorage.setItem('doragon',JSON.stringify(dragonball));
-    // console.log(JSON.stringify(dragonball))
-}
-})
+let todo = JSON.parse(localStorage.getItem('key'))
+let done_list =JSON.parse(localStorage.getItem('kagi'))
+let stop_list = document.querySelector('.stop-list');
+var done = document.querySelector('.done')
 
-function genkidama(kamesennin){
-                    let stop_list = document.querySelector('.stop-list');
-                    let list = document.createElement('li');
-                    list.classList.add('list');
-                    list.textContent = kamesennin;
-                    stop_list.appendChild(list);
-                    let stop_i = document.createElement('i')
-                    stop_i.classList.add('fas');
-                    stop_i.classList.add('fa-check');
-                    list.appendChild(stop_i);
-                    stop_i.addEventListener('click',function(){
-                    let judge = confirm('Are you sure you want to remove this list?');
-                    if (judge === true){
+if (todo == null) {
+    todo = [];
+}
+if (done_list == null) {
+    done_list = [];
+}
+
+for (var i = 0; i < todo.length; i++) {
+    hoge(todo[i],stop_list) 
+    }
+for (var i = 0; i < done_list.length; i++) {
+        hoge(done_list[i],done) 
+        }
+// for(var i = 0; i < done_list.length; i++){
+//     goku()
+//         }
+
+button.addEventListener('click',function(){
+    var input = document.querySelector('.input');    
+    if (input.value != '') {
+       hoge(input.value,stop_list);
+       todo.push(input.value);
+       localStorage.setItem('key',JSON.stringify(todo))     
+       console.log(JSON.stringify(todo))
+       }
+       })
+
+     function hoge(moji,stop){
+                var input = document.querySelector('.input');
+               
+                let list = document.createElement('li'); 
+                list.classList.add('list');    
+                list.textContent = moji;
+                stop.appendChild(list);
+                var icon = document.createElement('div');
+                list.appendChild(icon);
+                var trash = document.createElement('i');
+                trash.classList.add('fas');
+                trash.classList.add('fa-trash');
+                var check = document.createElement('i')
+                check.classList.add('fas')
+                check.classList.add('fa-check');
+                icon.appendChild(trash);
+                icon.appendChild(check);
+                trash.addEventListener('click',function(){
+                let hantei = confirm('Are you sure you want to remove this list?')
+                if (hantei === true) {
+                list.remove();
+                todo.splice(todo.indexOf(this.parentElement.textContent),1)
+                localStorage.setItem('key',JSON.stringify(todo))
+                }
+                })
+                check.addEventListener('click',function (){
+                   
+                    done.appendChild(document.querySelector('.list'))
+                    done_list.push(document.querySelector('.list').textContent);
+                    console.log(done_list)
+                    localStorage.setItem('kagi',JSON.stringify(done_list))
+                    console.log(JSON.stringify(done_list))
+                    todo.splice(todo.indexOf(this.parentElement.textContent),1)
+                    localStorage.setItem('key',JSON.stringify(todo))
+                    trash.addEventListener('click',function(){
                         list.remove();
-                        dragonball.splice(dragonball.indexOf(this.parentElement.textContent),1);
-                        localStorage.setItem('doragon',JSON.stringify(dragonball));
-                    }
-                    })
-                    }
-                    
+                        done_list.splice(done_list.indexOf(this.parentElement.textContent),1)
+                        // // localStorage.setItem('kagi',JSON.stringify(done_list))
+                        // console.log(done_list)
+                         localStorage.setItem('kagi',JSON.stringify(done_list))
+                         
+                        })
+
+                })
+                
+                }
+                console.log(done_list)
+              
+
+
+                
+                // JSON.parse(localStorage.getItem('kagi'))

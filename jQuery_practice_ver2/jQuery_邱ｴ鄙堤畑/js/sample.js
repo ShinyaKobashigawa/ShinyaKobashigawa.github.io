@@ -88,5 +88,50 @@ return false;
 });
 
 
+// Q10
+
+ //スライド一個分の横幅
+let slideWidth = $('.slide').outerWidth();　//クラスslideの全体横幅
+
+
+ //スライドの個数
+let slideNum = $('.slide').length;
+
+ //slide wrapperの横幅を計算
+let slideWrapperWidht = slideWidth * slideNum;
+
+ //slide wrapperに横幅を設定 
+$('.slide-wrapper').css('width',slideWrapperWidht);
+
+// 現在表示されているスライドの番号
+let currentSlide = 1;
+
+// 次へボタンが押された時
+$('.next-slider').on('click',function(){
+// $('.slide-wrapper').offset({left:'-500'});
+// 次のスライドを表示
+$('.slide-wrapper').stop().animate({left:(currentSlide * slideWidth * -1)});
+// 最後のスライドの時、ボタンを無効にする
+if (currentSlide >= slideNum -1){
+	return false;
+}
+currentSlide++;
+})
+
+// 前へボタンが押された時を作ってみましょう
+$('.prev-slider').on('click',function(){
+// スライド番業を1減らす
+currentSlide --;
+// 2->1は、left:0
+// 3->2は、left:-500
+// 最後のスライドの時、ボタンを無効にする
+if (currentSlide <= 0){
+return false;
+}
+$('.slide-wrapper').stop().animate({left:(currentSlide * slideWidth * -1)});
+
+})
+
+
 
 });
