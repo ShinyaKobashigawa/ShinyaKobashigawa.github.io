@@ -1,0 +1,48 @@
+.footer-title {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-title img {
+  width: 135px;
+  height: 26.27px;
+}
+
+.footer-icons {
+  height: 50px;
+  background-color: #87dfd3;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons li {
+  padding: 10px 20px;
+}
+
+.footer-icons li img {
+  width: 33px;
+}
+
+.footer-icons li.icons-fb img {
+  width: 14px;
+}
+
+.footer-icons .icons-fb {
+  padding-top: 11px;
+  padding-right: 29px;
+}
+
+.footer-icons .icons-yt {
+  padding-top: 13px;
+}
+
+.footer-copylight {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-copylight li {
+  font-size: 10px;
+}
